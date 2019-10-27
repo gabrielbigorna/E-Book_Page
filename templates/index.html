@@ -5,5 +5,31 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>E-BOOK AUXILIADOR PSW</h1>
+    <h1>E-BOOK AUXILIADOR PSW</h1></br></br>
+
+    <h2>1. Lista de passos para as primeiras criações e instalações:</h2></br>
+    </p>
+        1. Criar um diretório com seu nome para trabalhar o projeto;</br>
+        2. Dentro dele abra o terminal e digite “sudo apt install virtualenv” para instalar a “virtualenv” caso não tenha;</br>
+        3. Logo após digite “virtualenv -p python3 env” para criar uma MV(Máquina Virtual);</br>
+            1. nomes padrões “env” ou “venv”;</br>
+        4. Criada a MV, ative-a com o comando “source env/bin/activate”, assim você terá ela pronta para uso;</br>
+            1. Ou o nome que você deu a MV, no caso acima “env”;</br>
+        5. Depois você irá instalar o FLASK(mini framework), com este comando “pip install flask” dentro da env ativada;</br>
+            1. Para conferir a instalação digite “pip freeze”;</br>
+        6. E para desativar a env use o comando “deactivate”.</br>
+    </p>
+
+    <h2>2. Criação de uma página simples com o flask:</h2></br>
+    <p>
+    1. Abra um editor de texto, do próprio Linux ou um programa com os mesmos fins;</br>
+    2. Agora você irá construir a estrutura da página com códigos em python, salvando o arquivo como o nome que quiser, com a extenção “.py”;</br>
+        1. Padrão de nome -”app.py”;</br>
+        2. Visualizar (Anexo_1);</br>
+    3.  Feito isso, no terminal dentro da env, se você fez todo direito digite python3 e o nome do seu arquivo.py, ex: “python3 site.py”;</br>
+    4. Como esse comando será gerado um link, com o botão esquerdo click nele e escolha a opção “abir link” e sua página logo será aberta.</br>
+    </p>
+
+    <h2></h2>
+
 {% endblock content %}
