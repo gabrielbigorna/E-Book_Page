@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    PAGE_7
+{% endblock title %}
+
+{% block content %}
+    <h2>7. Templates:</h2></br>
+    <p>
+
+    1. Dentro do diretório com sua env crie um nova pasta com o nome “templates”;</br>
+        1. É um nome padrão;</br>
+    2. Nessa pasta serão armazenados arquivos “.HTML” e outros, que para serem acessados, é inserido ao “arq.py” o
+        módulo “render_template”;</br>
+        1. Este “arq.py” pode-se tomar como exemplo o (Anexo_1);</br>
+        2. A inserção será feito no seguinte esquema: “from flask import Flask, render_template”;</br>
+        3. Visualizar (Anexo_12);
+    3. Feito isso, agora você criará uma rota que ligará o “arq.html” dentro da pasta “templates” a página web, no
+        “arq.py” na qual está vinculada;
+        1. Visualizar (Anexo_13);
+        2. Isso após ter criado um “arq.html” de preferência com algum conteúdono diretório ”templates”, como no
+        (Anexo_13), “index.html”.</br>
+    </p>
+{% endblock content %}

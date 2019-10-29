@@ -10,12 +10,14 @@
     <h2>1. Lista de passos para as primeiras criações e instalações:</h2></br>
     </p>
         1. Criar um diretório com seu nome para trabalhar o projeto;</br>
-        2. Dentro dele abra o terminal e digite “sudo apt install virtualenv” para instalar a “virtualenv” caso não tenha;</br>
+        2. Dentro dele abra o terminal e digite “sudo apt install virtualenv” para instalar a “virtualenv” caso não
+        tenha;</br>
         3. Logo após digite “virtualenv -p python3 env” para criar uma MV(Máquina Virtual);</br>
             1. nomes padrões “env” ou “venv”;</br>
         4. Criada a MV, ative-a com o comando “source env/bin/activate”, assim você terá ela pronta para uso;</br>
             1. Ou o nome que você deu a MV, no caso acima “env”;</br>
-        5. Depois você irá instalar o FLASK(mini framework), com este comando “pip install flask” dentro da env ativada;</br>
+        5. Depois você irá instalar o FLASK(mini framework), com este comando “pip install flask” dentro da env
+        ativada;</br>
             1. Para conferir a instalação digite “pip freeze”;</br>
         6. E para desativar a env use o comando “deactivate”.</br>
     </p>
@@ -23,13 +25,133 @@
     <h2>2. Criação de uma página simples com o flask:</h2></br>
     <p>
     1. Abra um editor de texto, do próprio Linux ou um programa com os mesmos fins;</br>
-    2. Agora você irá construir a estrutura da página com códigos em python, salvando o arquivo como o nome que quiser, com a extenção “.py”;</br>
+    2. Agora você irá construir a estrutura da página com códigos em python, salvando o arquivo como o nome que quiser,
+        com a extenção “.py”;</br>
         1. Padrão de nome -”app.py”;</br>
         2. Visualizar (Anexo_1);</br>
-    3.  Feito isso, no terminal dentro da env, se você fez todo direito digite python3 e o nome do seu arquivo.py, ex: “python3 site.py”;</br>
-    4. Como esse comando será gerado um link, com o botão esquerdo click nele e escolha a opção “abir link” e sua página logo será aberta.</br>
+    3.  Feito isso, no terminal dentro da env, se você fez todo direito digite python3 e o nome do seu arquivo.py,
+        ex: “python3 site.py”;</br>
+    4. Como esse comando será gerado um link, com o botão esquerdo click nele e escolha a opção “abir link” e sua
+        página logo será aberta.</br>
     </p>
 
-    <h2></h2>
+    <h2>3. Programas a serem instalados:</h2></br>
+    <p>
+
+    1. Abra o terminal, de preferência em sua pasta (a criada para o projeto com o seu nome);</br>
+    2. Agora com os seguintes comandos instale os programas;</br>
+        1. “sudo apt install sqlite3” - SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL
+        embutido. Programas que usam a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo
+        SGBD separado, segundo o Wikipédia;</br>
+        2. “sudo apt install sqlitebrowser” - É o programa executável que se acessa ao procurá-lo em atividades e
+        digitar “DB Browser for SQLite”;</br>
+        3. “sudo snep install code” - com este você instala o Virtaul Studio Code, coso não funcione tente “sudo snep
+        install code --classic”;</br>
+        4. “pip install flask-sqlalchemy” - Este será instalado na env ativada. O Flask-SQLAlchemy é uma extensão do
+        Flask que adiciona suporte ao SQLAlchemy ao seu aplicativo. O objetivo é simplificar o uso do SQLAlchemy com
+        Flask, fornecendo padrões úteis e auxiliares extras que facilitam a realização de tarefas comuns, segundo o
+        site documental oficial do  flask-sqlalchemy;</br>
+        5. “pip install ipython” - Assim como o comando acima este também é dentro da env. Ipython é um interpretador
+        interativo para várias linguagens de programação, mas especialmente focado em Python. Ipython oferece "type
+        introspection", "rich media", sintax shell, completação por tab e edição auxiliada por histórico de comando,
+        segundo o Wikipédia sobre o ipython, e para usá-lo basta digitar “ipython” e para sair “exit”, na env.</br>
+    </p>
+
+    <h2>4. Lista de comandos para Linux:</h2></br>
+    <p>
+    1. Guia_de_500_comandos_Linux. Disponível em https://www.linuxpro.com.br/dl/guia_500_comandos_Linux.pdf.
+        Acesso em: 13 de set. 2019.</br>
+    2. Com este guia você poderá aprender alguns comandos que podem lhe ser útil na hora de programar.</br>
+    </p>
+
+    <h2>5. Browser – Banco de Dados:</h2>
+    <p>
+
+    1. Após a instalação do “sqlite3” e do “sqlitebrowser” com os comandos que você viu nos conteúdos 3.2.1 e 3.2.2,
+        iremos a sua utilização;</br>
+    2. Primeiramente abra o programa “DB Browser for SQLite” ao digitá-lo em “Atividades”. No programa aberto vá em
+        “Novo banco de bados”, depois escolha um diretório pra salvá-lo, com um nome e a extensão ”.db”;
+        1. Exemplo, “meuBanco.db”;</br>
+        2. Visualizar (Anexo_2);</br>
+    3.  Feito isso, abrirá uma tela na qual você irá defini um nome para sua tabela (Anexo_3);</br>
+        1. exemplo (Anexo_4);</br>
+    4. Depois você irá em “Adicionar campo”, que adicionará um atributo a tabela criada, na qual pode-se alterar o nome,
+        tipo(interger, text, blob, real e numeric), além das opções Não nulo, PK(Primary Key), Al(automático) e
+        U(Único);</br>
+        1. Visualizar (Anexo_5);</br>
+        2. Exemplo (Anexo_6);</br>
+    5. Feito os campos, selecione a tabela criada (Anexo_7), e vá em “Navegar dados”, nessa área pode-se atribuir valores aos campus criados (Anexo_8);
+        1. exemplo (Anexo_9);</br>
+    </p>
+
+    <h2>6. Criando um banco com o flask-sqlalchemy:</h2></br>
+    <p>
+
+    1. Para esse processo você precisará já ter instalado todos programas do item 3, e ter a sua env;
+    2. No diretório que contém sua env crie um arquivo “.py” com um editor de texto contendo os seguintes códigos,
+        visualizar(Anexo_10);</br>
+        1. exemplo “DataBase.py”;</br>
+    3. Depois abrir no terminal a sua env , ative-a. Acesse o “ipython” e insira os dados comandos;</br>
+        1. from “nome_do_arq.py” import db;</br>
+            1. ex: from DataBase.py import db;</br>
+        2. Repita o primeiro - “from “nome_do_arq.py” import db”;</br>
+        3. db_create_all();</br>
+        4. visualizar (Anexo_11);</br>
+        4. Após todo este processo você terá em seu diretório juntamente com a sua env um arquivo chamando “banco1.db” e
+        uma pasta “__pycache__”, na qual você pode está acessando pelo DB Browser for SQLite no mesmo esquema do
+        item 5.5;</br>
+        1. OBS: O banco criado recebe o nome de “banco1”, pois está definido no código visualizado no (Anexo_10), no
+        qual você pode alterá-lo com o nome que preferir, sem esquecer de colocar a extensão “.db” ao final.</br>
+        </p>
+
+    <h2>7. Templates:</h2></br>
+    <p>
+
+    1. Dentro do diretório com sua env crie um nova pasta com o nome “templates”;</br>
+        1. É um nome padrão;</br>
+    2. Nessa pasta serão armazenados arquivos “.HTML” e outros, que para serem acessados, é inserido ao “arq.py” o
+        módulo “render_template”;</br>
+        1. Este “arq.py” pode-se tomar como exemplo o (Anexo_1);</br>
+        2. A inserção será feito no seguinte esquema: “from flask import Flask, render_template”;</br>
+        3. Visualizar (Anexo_12);
+    3. Feito isso, agora você criará uma rota que ligará o “arq.html” dentro da pasta “templates” a página web, no
+        “arq.py” na qual está vinculada;
+        1. Visualizar (Anexo_13);
+        2. Isso após ter criado um “arq.html” de preferência com algum conteúdono diretório ”templates”, como no
+        (Anexo_13), “index.html”.</br>
+    </p>
+
+    <h2>8. Criando o Blog (simples):</h2>
+    <p>
+        1. O primeiro passo, é fazer todos os processos do item 1. Feito isso, crie um diretório templates e logo após
+        instale o Virtaul Studio Code, caso este não esteja instalado( para a instalação visualizar item 3.2.3);</br>
+        2. Em seguida, no terminal, ative a sua env e abra o Virtaul Studio Code com o comando “code .”. O programa
+        será aberto e você visualizará todos os arquivos em seu diretório: Pasta env, pasta templates e arq.py;</br>
+        1. adicione na primeira linha de código do seu arq.py o módulo “render_template”, para as criações de rotas de
+        arquivos “.html” da pasta templates, para que possam ser acessadas quando forem chamadas no navegador;</br>
+        2. Visualizar (Anexo_14);</br>
+        3. Posterior, ainda no “code”, vá em seu diretório templates e crie um arquivo, “base.html”. No qual servirá de
+        base para os futuros arquivos. Nela digite “html”, desse modo pode lhe aparecer a opção “HTML:5”, selecione-a,
+        mas se não apenas construa a estrutura básica de uma página HTML;</br>
+        1. Visualizar (Anexo_15);</br>
+        4. Dentro do seu arquivo base.html, entre as tags “<title>” e “<body>”, adicione os comandos do “Jinja”. No
+        primeiro escreva “(% block title %) C% endblock title %, e no segundo “{% block conteudo %}
+        {% endblock conteudo %}”
+        1. Visualizar (Anexo_16);</br>
+        5. Ainda na pasta templates crie outro arquivo, com o nome “blog.html”. Nele você iniciará a primeira linha
+        com o código “(% extends 'base.html' %  , que fará um ponte com o outro arquivo, no qual importá as
+        funcionalidades dos códigos que forem sendo acrescentados nele, além dos códigos já presentes;</br>
+        6. Agora com os códigos encontrados no item acima, 8.4, adicione um título e um conteúdo ao seu arquivo.html
+        (blog.html);</br
+        1. Visualizar (Anexo_17);</br>
+        7. Após a criação e inserção dos devidos códigos no seu arquivo.html (blog.html), vá para o “arq.py” e declare
+        uma rota para sua página;</br>
+        1. Visualizar (Anexo_18);</br>
+        8. Para finalizar, teste-o para confirmar sua funcionalidade, vá ao terminal com sua env ativada e digite
+        “python3 nome_do_aquivo.extesão” (python3 arq.py), se aparecer as seguintes telas, seu blog simples estará
+        funcionando;</br>
+        1. OBS: não esqueça de escrever ao final do link a rota ”/blog”, para o acesso da página;</br>
+        2. Tela01 visualizar (Anexo_19), e tela02 visualizar (Anexo_20).</br>
+    </p>
 
 {% endblock content %}

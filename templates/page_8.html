@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    PAGE_8
+{% endblock title %}
+
+{% block content %}
+     <h2>8. Criando o Blog (simples):</h2>
+    <p>
+        1. O primeiro passo, é fazer todos os processos do item 1. Feito isso, crie um diretório templates e logo após
+        instale o Virtaul Studio Code, caso este não esteja instalado( para a instalação visualizar item 3.2.3);</br>
+        2. Em seguida, no terminal, ative a sua env e abra o Virtaul Studio Code com o comando “code .”. O programa
+        será aberto e você visualizará todos os arquivos em seu diretório: Pasta env, pasta templates e arq.py;</br>
+        1. adicione na primeira linha de código do seu arq.py o módulo “render_template”, para as criações de rotas de
+        arquivos “.html” da pasta templates, para que possam ser acessadas quando forem chamadas no navegador;</br>
+        2. Visualizar (Anexo_14);</br>
+        3. Posterior, ainda no “code”, vá em seu diretório templates e crie um arquivo, “base.html”. No qual servirá de
+        base para os futuros arquivos. Nela digite “html”, desse modo pode lhe aparecer a opção “HTML:5”, selecione-a,
+        mas se não apenas construa a estrutura básica de uma página HTML;</br>
+        1. Visualizar (Anexo_15);</br>
+        4. Dentro do seu arquivo base.html, entre as tags “<title>” e “<body>”, adicione os comandos do “Jinja”. No
+        primeiro escreva “(% block title %) C% endblock title %, e no segundo “{% block conteudo %}
+        {% endblock conteudo %}”
+        1. Visualizar (Anexo_16);</br>
+        5. Ainda na pasta templates crie outro arquivo, com o nome “blog.html”. Nele você iniciará a primeira linha
+        com o código “(% extends 'base.html' %  , que fará um ponte com o outro arquivo, no qual importá as
+        funcionalidades dos códigos que forem sendo acrescentados nele, além dos códigos já presentes;</br>
+        6. Agora com os códigos encontrados no item acima, 8.4, adicione um título e um conteúdo ao seu arquivo.html
+        (blog.html);</br
+        1. Visualizar (Anexo_17);</br>
+        7. Após a criação e inserção dos devidos códigos no seu arquivo.html (blog.html), vá para o “arq.py” e declare
+        uma rota para sua página;</br>
+        1. Visualizar (Anexo_18);</br>
+        8. Para finalizar, teste-o para confirmar sua funcionalidade, vá ao terminal com sua env ativada e digite
+        “python3 nome_do_aquivo.extesão” (python3 arq.py), se aparecer as seguintes telas, seu blog simples estará
+        funcionando;</br>
+        1. OBS: não esqueça de escrever ao final do link a rota ”/blog”, para o acesso da página;</br>
+        2. Tela01 visualizar (Anexo_19), e tela02 visualizar (Anexo_20).</br>
+    </p>
+{% endblock content %}

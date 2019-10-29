@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    PAGE_6
+{% endblock title %}
+
+{% block content %}
+     <h2>6. Criando um banco com o flask-sqlalchemy:</h2></br>
+    <p>
+
+    1. Para esse processo você precisará já ter instalado todos programas do item 3, e ter a sua env;
+    2. No diretório que contém sua env crie um arquivo “.py” com um editor de texto contendo os seguintes códigos,
+        visualizar(Anexo_10);</br>
+        1. exemplo “DataBase.py”;</br>
+        3. Depois abrir no terminal a sua env , ative-a. Acesse o “ipython” e insira os dados comandos;</br>
+        1. from “nome_do_arq.py” import db;</br>
+            1. ex: from DataBase.py import db;</br>
+        2. Repita o primeiro - “from “nome_do_arq.py” import db”;</br>
+        3. db_create_all();</br>
+        4. visualizar (Anexo_11);</br>
+        4. Após todo este processo você terá em seu diretório juntamente com a sua env um arquivo chamando “banco1.db” e
+        uma pasta “__pycache__”, na qual você pode está acessando pelo DB Browser for SQLite no mesmo esquema do
+        item 5.5;</br>
+        1. OBS: O banco criado recebe o nome de “banco1”, pois está definido no código visualizado no (Anexo_10), no
+        qual você pode alterá-lo com o nome que preferir, sem esquecer de colocar a extensão “.db” ao final.</br>
+        </p>
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    PAGE_3
+{% endblock title %}
+
+{% block content %}
+    <h2>3. Programas a serem instalados:</h2></br>
+    <p>
+    1. Abra o terminal, de preferência em sua pasta (a criada para o projeto com o seu nome);</br>
+    2. Agora com os seguintes comandos instale os programas;</br>
+        1. “sudo apt install sqlite3” - SQLite é uma biblioteca em linguagem C que implementa um banco de dados SQL
+        embutido. Programas que usam a biblioteca SQLite podem ter acesso a banco de dados SQL sem executar um processo
+        SGBD separado, segundo o Wikipédia;</br>
+        2. “sudo apt install sqlitebrowser” - É o programa executável que se acessa ao procurá-lo em atividades e
+        digitar “DB Browser for SQLite”;</br>
+        3. “sudo snep install code” - com este você instala o Virtaul Studio Code, coso não funcione tente “sudo snep
+        install code --classic”;</br>
+        4. “pip install flask-sqlalchemy” - Este será instalado na env ativada. O Flask-SQLAlchemy é uma extensão do
+        Flask que adiciona suporte ao SQLAlchemy ao seu aplicativo. O objetivo é simplificar o uso do SQLAlchemy com
+        Flask, fornecendo padrões úteis e auxiliares extras que facilitam a realização de tarefas comuns, segundo o
+        site documental oficial do  flask-sqlalchemy;</br>
+        5. “pip install ipython” - Assim como o comando acima este também é dentro da env. Ipython é um interpretador
+        interativo para várias linguagens de programação, mas especialmente focado em Python. Ipython oferece "type
+        introspection", "rich media", sintax shell, completação por tab e edição auxiliada por histórico de comando,
+        segundo o Wikipédia sobre o ipython, e para usá-lo basta digitar “ipython” e para sair “exit”, na env.</br>
+    </p>
+{% endblock content %}
