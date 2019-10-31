@@ -7,8 +7,9 @@
 {% block content %}
     <h1>E-BOOK AUXILIADOR PSW</h1></br></br>
 
+    {% block div%}
     <h2>1. Lista de passos para as primeiras criações e instalações:</h2></br>
-    </p>
+    <p>
         1. Criar um diretório com seu nome para trabalhar o projeto;</br>
         2. Dentro dele abra o terminal e digite “sudo apt install virtualenv” para instalar a “virtualenv” caso não
         tenha;</br>
@@ -21,8 +22,8 @@
             1. Para conferir a instalação digite “pip freeze”;</br>
         6. E para desativar a env use o comando “deactivate”.</br>
     </p>
-
-    <h2>2. Criação de uma página simples com o flask:</h2></br>
+    {% endblock div%}
+    </br><h2>2. Criação de uma página simples com o flask:</h2></br>
     <p>
     1. Abra um editor de texto, do próprio Linux ou um programa com os mesmos fins;</br>
     2. Agora você irá construir a estrutura da página com códigos em python, salvando o arquivo como o nome que quiser,
